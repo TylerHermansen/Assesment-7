@@ -1,0 +1,25 @@
+Results for the extraLargeArray
+insert 706.767667 ms
+append 2.964208 ms
+
+Results for the largeArray
+insert 5.483125 ms
+append 356.542 μs
+
+Results for the tinyArray
+insert 44.334 μs
+append 51.083 μs
+
+Results for the tinyArray
+insert 24.292 μs
+append 59.958 μs
+
+Results for the tinyArray
+insert 111.25 μs
+append 81.792 μs
+
+
+
+The append function seems to be slower when the nuber of inputs is low. But as the number of inputs increases we see that the insert function becomes significanty slower. 
+The only major difference between these two functions are the array functions of 'push' and 'unshift'. Because of the way that unshift functions it is O(n) and push is O(1) for time. 
+The unshift. Then when you put them in a for loop that is O(n) you then get n*n and n*1 for the insert and append functions respectivly
